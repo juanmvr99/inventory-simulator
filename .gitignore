@@ -1,5 +1,6 @@
 nbproject/
-.build
-.manifest
-.readme
-.README
+build.xml
+manifest.mf
+readme.txt
+README
+readme.url
