@@ -5,10 +5,10 @@ public class Distribucion {
     //las probabilidades se ingresan en porcentajes de 1 a 100
     
     private int valor;
-    private float probabilidad;
-    private float probAcumulada;
+    private double probabilidad;
+    private double probAcumulada;
 
-    public Distribucion(int valor, float probabilidad) {
+    public Distribucion(int valor, double probabilidad) {
         this.valor = valor;
         this.probabilidad = probabilidad;
     }
@@ -27,19 +27,19 @@ public class Distribucion {
         this.valor = valor;
     }
 
-    public float getProbabilidad() {
+    public double getProbabilidad() {
         return probabilidad;
     }
 
-    public void setProbabilidad(float probDemanda) {
+    public void setProbabilidad(double probDemanda) {
         this.probabilidad = probDemanda;
     }
 
-    public float getProbAcumulada() {
+    public double getProbAcumulada() {
         return probAcumulada;
     }
 
-    public void setProbAcumulada(float probAcumulada) {
+    public void setProbAcumulada(double probAcumulada) {
         this.probAcumulada = probAcumulada;
     }
     

@@ -8,7 +8,7 @@ public class Tiempos {
     public final static ArrayList<Distribucion> demandas = new ArrayList();
     public final static ArrayList<Distribucion> esperas = new ArrayList();
     public final static ArrayList<Distribucion> entregas = new ArrayList();
-   
+    private final static Calculos calculo = new Calculos();
     //en este bloque por ahora se inicializan todas las tablas de distrubuciones con valores hardcodeados
     static {
         System.out.println("entrando al bloque estatico...");
@@ -35,6 +35,8 @@ public class Tiempos {
         esperas.add(new Distribucion(4, 10));
         
         calcularProbAcumulada();
+        
+        
     }
     
     public Tiempos() {
@@ -42,7 +44,7 @@ public class Tiempos {
     }
     
     private static void calcularProbAcumulada() {
-        float acum = 0;
+        double acum = 0;
         
         //recorrer los arraylists e ir asignando las probabilidades acumuladas de cada valor
         for (Distribucion i : demandas) {
@@ -63,6 +65,8 @@ public class Tiempos {
             acum = acum + i.getProbabilidad();
             i.setProbAcumulada(acum);
         }
+        //Prueba
+        calculo.Q(demandas, 12, 10);
     }
     
 }
