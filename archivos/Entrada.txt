@@ -1,0 +1,44 @@
+Cantidad de tiempo
+12
+
+Costo de inventario
+11
+Costo de compra
+11
+Costo por orden
+11
+Costo de faltante con espera
+11
+Costo de faltante sin espera 
+11
+Inventario inicial
+11
+
+Demanda
+5
+20
+7
+30
+8
+35
+9
+15
+Tiempos de entrega
+10
+15
+12
+20
+14
+45
+18
+20
+Tiempos de Espera
+4
+10
+7
+20
+9
+35
+11
+35
+Fin
