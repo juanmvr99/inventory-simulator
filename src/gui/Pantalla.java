@@ -4,8 +4,10 @@ import java.awt.event.KeyAdapter;
 import java.awt.event.KeyEvent;
 import java.text.DecimalFormat;
 import java.util.ArrayList;
+import javax.swing.BorderFactory;
 import javax.swing.JOptionPane;
 import javax.swing.JTextField;
+import javax.swing.border.Border;
 import javax.swing.table.DefaultTableModel;
 import procesos.Calculos;
 import procesos.Constantes;
@@ -21,6 +23,9 @@ public class Pantalla extends javax.swing.JFrame {
         validarDatos();
         this.jPanel2.setVisible(false);
         this.setTitle("Simulacion de inventario");
+        Border blackline = BorderFactory.createTitledBorder("Oxígenos de Oriente");
+        jPanel1.setBorder(blackline);
+        this.setLocationRelativeTo(null);
     }
     
     public static void main(String args[]) {

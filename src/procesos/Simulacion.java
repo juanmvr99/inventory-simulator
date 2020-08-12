@@ -43,9 +43,8 @@ public class Simulacion {
         Queue<EstructuraFaltantes> listaFaltantes = new LinkedList();
         
         while (dia <= Constantes.numeroDias) {
-            
             //determinar el inventario Inicial  
-            invInicial = invFinal; // = al invFinal del dia anterior
+            invInicial = invFinal; 
             if (dia == diaEntrega) {
                 invInicial += this.Q;
                 hayOrdenPendiente = false;
@@ -83,9 +82,7 @@ public class Simulacion {
                     EstructuraFaltantes f = new EstructuraFaltantes(faltante, tEspera, diaLimiteEspera);
                     listaFaltantes.add(f);
                 } else {
-//                    this.costoTotalFaltantes += faltante * Constantes.costoFaltanteSinEspera;
                     this.faltantesSinEspera += faltante;
-                    //System.out.println("costoFaltantes += "+faltante+"*"+Constantes.costoFaltanteSinEspera);
                     faltante = 0;
                 }
              }
@@ -96,7 +93,6 @@ public class Simulacion {
                 nroOrden++;
                 tEntrega = Calculos.obtenerValor(Constantes.entregas);
                 diaEntrega = dia + tEntrega + 1;
-                //System.out.println("se pidio la orden "+nroOrden+ " que tardara "+tEntrega);
             }
             
             hayFaltante = false;
