@@ -22,7 +22,7 @@ public class Constantes {
        
     }
     
-    public static void insertarDatosPrueba() {
+    /*public static void insertarDatosPrueba() {
         System.out.println("insertando datos de prueba...");
         
         //se demandan 10 unidades el 4% de las veces y asi...
@@ -97,5 +97,5 @@ public class Constantes {
         esperas.add(new Distribucion(3, 6.25));
         esperas.add(new Distribucion(4, 6.25));
         esperas.add(new Distribucion(5, 8.33));
-    }
+    }*/
 }

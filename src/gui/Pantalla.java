@@ -809,7 +809,7 @@ public class Pantalla extends javax.swing.JFrame {
         Constantes.unidadTiempo = uniTiempo;
         
         //inciar con valores de prueba a las distribuciones
-        Constantes.insertarDatosPruebaOxigeno();
+        //Constantes.insertarDatosPruebaOxigeno();
         Calculos.calcularProbAcumulada();
         
         System.out.println("demandas: ");
@@ -982,14 +982,14 @@ public class Pantalla extends javax.swing.JFrame {
             i++;
         }
         for(i = 0; i < demanda.size(); i++){
-            Constantes.demandas.add(new Distribucion(Integer.parseInt(demanda.get(i)), Integer.parseInt(demanda.get(++i))));
+            Constantes.demandas.add(new Distribucion(Integer.parseInt(demanda.get(i)), Float.parseFloat(demanda.get(++i))));
            
         }
         for(i = 0; i < tEntrega.size()-1; i++){
-            Constantes.entregas.add(new Distribucion(Integer.parseInt(tEntrega.get(i)), Integer.parseInt(tEntrega.get(++i))));
+            Constantes.entregas.add(new Distribucion(Integer.parseInt(tEntrega.get(i)), Float.parseFloat(tEntrega.get(++i))));
         }
         for(i = 0; i < tEspera.size()-1; i++){
-            Constantes.esperas.add(new Distribucion(Integer.parseInt(tEspera.get(i)), Integer.parseInt(tEspera.get(++i))));
+            Constantes.esperas.add(new Distribucion(Integer.parseInt(tEspera.get(i)), Float.parseFloat(tEspera.get(++i))));
         }
         this.demanda_JText.setText("");
         this.probDemanda_JText.setText("");
