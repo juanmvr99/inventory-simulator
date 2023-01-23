@@ -1,2 +1,1 @@
-# proyecto-luzme
-ora si
+# Inventory simulation system
